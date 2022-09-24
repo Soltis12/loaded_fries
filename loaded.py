@@ -9,7 +9,7 @@ streamlit.text('🍗 Chicken, Chicken Skins, Cheddar Cheese and Barbeque Sauce')
 streamlit.text('🥑 Avocado, Free-From Cheese, Lettuce and Vegan Sauce')
 streamlit.text('🦆 Duck, Mushrooms, Bean Sprouts and Hoisin Sauce')
 
-streamlit.header('🏗️ Build your own Fruit Smoothie')
+streamlit.header('🏗️ Build your own Dirty Fries')
 
 # Import Fruit list
 #import pandas
