@@ -11,14 +11,14 @@ streamlit.text('🦆 Duck, Mushrooms, Bean Sprouts and Hoisin Sauce')
 
 streamlit.header('🏗️ Build your own Dirty Fries')
 
-# Import Fruit list
-#import pandas
-#my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-#my_fruit_list = my_fruit_list.set_index('Fruit')
+# Import Food list
+import pandas
+foods = pandas.read_csv("https://drive.google.com/file/d/1yQv4h4yg3A01K9UjWbvsrFCHDbk39Isc/view?usp=sharing")
+foods = foods.set_index('Name')
 
-# Pick fruit
-#fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Lemon','Kiwifruit'])
-#fruits_to_show = my_fruit_list.loc[fruits_selected]
+# Pick Food
+foods_selected = streamlit.multiselect("Pick some foods:", list(foods.index),['Skinny Fries','Chicken'])
+foods_to_show = foods.loc[foods_selected]
 
 # Display list of fruits
-#streamlit.dataframe(fruits_to_show)
+streamlit.dataframe(foods_to_show)
